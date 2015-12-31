@@ -19,3 +19,25 @@ rm - removes a file
 help - (man in unix) brings up information about commands
 
 ## 1.4 Forking and Cloning
+
+Create a new repo 
+1. Go to your GitHub profile page
+2. Click the + left of your name and select "New Repository"
+3. On your new repository page give it a name, select if it will be public or private and add a license and/or README if applicable 
+4. Click the "create repository" button when finished and you are done!
+
+Fork a repo
+1. Navigate to the repo that you want to fork
+2. Select the "fork" button and if you belong to multiple organizations select the one you want to fork it to. 
+3. When it has been forked GitHub will redirect to your own forked copy of the repo. This will be apparent because your username will appear in front of the repo name
+
+Forking a repo lets you work on a repository that has already been created and make changes without affecting the master copy. 
+
+Clone a repo
+1. Go to your forked repo and find the URL (this could be HTTP or SSH if you have a key) and copy it
+2. In your terminal go to the directory you wish to clone into
+3. Once there type git clone URL replacing "URL" with the clone URL you copied
+4. If prompted, enter your GitHub username and password
+5. Once the command prompt appears again type ls to see that the repo has been cloned into your directory
+
+In setting up git and GitHub I learned how to clone a repository to my computer and open it with sublime in my terminal. I had to research the command to open the cloned repo in sublime, but the instructions were very straight forward and made it easy to learn. 

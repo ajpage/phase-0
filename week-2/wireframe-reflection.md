@@ -1,3 +1,8 @@
+![Site Map](/week-2/imgs/wireframe-index.jpg)
+
+![Site Map](/week-2/imgs/wireframe-blog-index.jpg)
+
+
 1. What is a wireframe?  
 A wireframe is like a blue print of a web page. It is a visual representation of the skeletal framework.
 

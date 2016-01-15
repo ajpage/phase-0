@@ -4,7 +4,7 @@
 <!-- defines title in browser tab -->
 <title>BERKSHIRE HATHAWAY INC.</title>
 <!-- specifies how elements should be rendered in browser -->
-<style type="text/css"></style>
+<link type="text/css" rel="stylesheet" href="../../week-3/stylesheets/my-berkshire-stylesheet.css" />
 <!-- for search engines-->
 <meta>
 </head>
@@ -29,14 +29,18 @@ HTML gives page content some structure and also a clear heirarchy of things. At 
 A lot of the tags sound like what they are going to do or are very self explanatory. I learn best just by keeping my knowledge fresh and continuing to use what I have learned. 
 -->
 
+<header>
+	<h1><span>B</span>erkshire <span>H</span>athaway Inc.</h1>
+	<h3>Official Home Page</h3>
+	<p>
+		3555 Farnam Street
+		Omaha, NE 68131
+	</p>
+</header>
 
-<h1>Berkshire Hathaway Inc.</h1>
-<p>
-3555 Farnam Street
-Omaha, NE 68131
-Official Home Page
-</p>
-<div>
+<div class="linebreak"></div>
+
+<div class="left">
 	<ul>
 		<li><a href="#">A Message From Warren E. Buffett</a></li>
 		<li><a href="#">Annual &amp; Interim Reports</a><br/>Updated November 6, 2015</li>
@@ -48,7 +52,8 @@ Official Home Page
 		<li><a href="#">Letters from Warren E. Buffett Regarding Pledges to Make Gifts of Berkshire Stock</a></li>
 	</ul>	
 </div>
-<div>
+
+<div class="right">
 	<ul>
 		<li><a href="#">News Releases</a><br/>Updated November 6, 2015</li>
 		<li><a href="#">Warren Buffett's Letters to Berkshire Shareholders</a><br/>Updated February 28, 2015</li>
@@ -59,18 +64,22 @@ Official Home Page
 		<li><a href="#">Berkshire Activewear</a></li>
 	</ul>	
 </div>
-<div>
+
+<footer>
+<div class="linebreak"></div>
 	<img src="../imgs/geico-logo.png">
-	<p>
+	<p class="geico">
 		For a free car insurance rate quote that could save you substantial money <a href="#">www.geico.com</a> or call 1-888-395-6349, 24 hours a day
 	</p>
-	<p>
+<div class="linebreak"></div>
+	<p class="comments">
 		If you have any comments about our WEB page, you can either write us at the address shown above or e-mail us at <a href="#">berkshire@berkshirehathaway.com</a>. However, due to the limited number of personnel in our corporate office, we are unable to provide a direct response.
 	</p>
+<div class="linebreak"></div>
 	<p>
 		<a href="#">Legal Disclaimer</a>
 		<h6>Copyright &copy; 1978-2015 Berkshire Hathaway Inc.</h6>
 	</p>
-</div>	
+</footer>	
 </body>
 </html>

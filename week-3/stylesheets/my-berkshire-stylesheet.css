@@ -1,3 +1,27 @@
+/*
+1. What is important to know when linking an external file (like a stylesheet) to an HTML file?
+  A link tag needs three attributes: type, rel, and href. When linking a stylesheet these will be
+   type="text/css" rel="stylesheet" href="the file path"
+
+2. What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+  To position the two collumns of links we used divs and floated one to the left and one to the right.
+  Also the footer element had to clear both in order for it to drop to the bottom of the page where it 
+  is supposed to be. I liked to put borders around elements to see if I needed to change the margin or the padding
+  to get their positioning how I wanted them.
+
+3. What CSS did you use to modify the element style (like size, color, etc.)
+  We used color to change the text color to navy, background-color to change the background to white, 
+  font-family to change the header to have sans-serif font and modified a lot of text elements size using
+  font-size.
+
+4. Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+  We used both classes and ids in the HTML. Since they were only going to be used once, we used ids for both the 
+  divs that contained the link elements to float those left and right. We also created a linebreak class to insert 
+  the linebreaks multiple times throughout the page without using HTML.
+5 .When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+  The actual code base styled their page in the HTML instead of using CSS which does not follow best practices.
+*/
+
 body {
   color: #000080;
   background-color: #ffffff;

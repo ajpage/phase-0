@@ -1,4 +1,10 @@
 =begin
+#address solution file
+https://github.com/ajpage/phase-0/blob/master/week-4/address/my_solution.rb
+
+#math solution file
+https://github.com/ajpage/phase-0/blob/master/week-4/math/my_solution.rb
+
 How do you define a local variable?
 	local_var = "this is a local variable"
 

@@ -11,6 +11,9 @@ For example:
 9.0 / 2.0 will return 4.5
 
 ```ruby
+#Hours in a year
 puts 365 * 24
+
+#Minutes in a decade
 puts 10 * 365 * 24 * 60
 ```

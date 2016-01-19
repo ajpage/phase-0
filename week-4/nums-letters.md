@@ -18,7 +18,8 @@ puts 365 * 24
 puts 10 * 365 * 24 * 60
 ```
 
-1. How does Ruby handle addition, subtraction, multiplication, and division of numbers?  Ruby does arithmetic just as expected with the exception that if the numbers being added, subtracted, etc are integers it will return and integer and likewise if the numbers being used are floats it will return a float. 
+1. How does Ruby handle addition, subtraction, multiplication, and division of numbers?  
+Ruby does arithmetic just as expected with the exception that if the numbers being added, subtracted, etc are integers it will return and integer and likewise if the numbers being used are floats it will return a float. 
 
 2. What is the difference between integers and floats? 
 Integers have no decimal component while floats do.   
@@ -29,7 +30,7 @@ Integer division will return an integer. So if there is a decimal component to t
 4. What are strings? Why and when would you use them?   
 Strings are letters or groups of letters and possibly numbers. But numbers as strings can not do arithmetic as you would expect. Strings can be used to get or give input from a user.
 
-5. What are local variables? Why and when would you use them?  
+5. What are local variables? Why and when would you use them?   
 Local variables are variables that are accessible only in the location they are initialized, whether this is the file, some method, etc. They are used to store information for later use. 
 
 6. How was this challenge? Did you get a good review of some of the basics?   

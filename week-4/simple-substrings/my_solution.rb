@@ -6,15 +6,9 @@
 
 # Your Solution Below
 def welcome(address)
-  arr = address.split(" ")
-  i = 0
-
-  while i < arr.length
-  	if arr[i] == "CA"
-  	  return "Welcome to California"
-  	end
-  	i += 1
+  if address.include? "CA"
+  	return "Welcome to California"
+  else
+  	return "You should move to California"
   end
-  
-  return "You should move to California"
 end

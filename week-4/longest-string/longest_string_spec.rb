@@ -1,52 +1,31 @@
-# Longest String
+require_relative "my_solution"
 
-# I worked on this challenge [by myself, with: ].
+describe 'longest_string' do
+  it "returns nil when the array is empty ([])" do
+    expect(longest_string([])).to be_nil
+  end
 
-# longest_string is a method that takes an array of strings as its input
-# and returns the longest string
-#
-# +list_of_words+ is an array of strings
-# longest_string(list_of_words) should return the longest string in +list_of_words+
-#
-# If +list_of_words+ is empty the method should return nil
-=begin
--pseudocode-
-input: array
-output: string 
+  it "returns '' when that is the only element in the array" do
+    expect(longest_string([''])).to eq ''
+  end
 
-create new string object called longer
-SET to first element in list_of_words array
+  it "returns 'cat' when that is the only element in the array" do
+    expect(longest_string(['cat'])).to eq 'cat'
+  end
 
-for EACH element in list_of_words array
-  IF the element has a length greater than the current longer length
-    set longer variable to current index
-    move on to next element
-  ELSE
-    move on to next element
-  END IF
+  it "returns the longest string regardless of what characters they contain" do
+    expect(longest_string(['ZZZ', 'zzzzz'])).to eq 'zzzzz'
+  end
 
+  it "returns the 'aaaaaaa' with the example array" do
+    expect(longest_string(['cat', 'aaaaaaa', 'apples'])).to eq 'aaaaaaa'
+  end
 
-=end
+  it "returns the longest string regardless of ordering" do
+    # This creates an array containing ['a', 'aa', ...]
+    # up to 10 characters long, but randomly ordered
+    array = Array.new(10) { |i| 'a' * (i + 1) }.shuffle
 
-
-# Your Solution Below
-=begin
-
-def longest_string(list_of_words)
-  # Your code goes here!
-  longest = list_of_words[0]
-  
-  list_of_words.each { |idx|
-    if idx.length > longest.length
-      longest = idx 
-    end
-  }
-  
-  return longest
-end
-
-=end
-
-def longest_string(list_of_words)
-  list_of_words.max_by { |x| x.length}  
+    expect(longest_string(array)).to eq 'a'*10
+  end
 end

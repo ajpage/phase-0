@@ -36,9 +36,9 @@ used this format for initial code then went with the each method
 
 # Your Solution Below
 def smallest_integer(list_of_nums)
-  if list_of_nums.length == 0
-  	return nil
-  end
+  #if list_of_nums.length == 0
+  #	return nil
+  #end
 
   smallest = list_of_nums[0]
   list_of_nums.each { |idx|

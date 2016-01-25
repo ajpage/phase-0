@@ -1,6 +1,6 @@
 # Define a Hash
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # Your Solution Below
@@ -12,6 +12,13 @@ my_info = {
 :hometown => "Tulsa",
 :age => 27
 }
+
+#access hash information
+my_info[:first_name]
+my_info[:last_name]
+my_info[:hometown]
+my_info[:age]
+
 
 
 

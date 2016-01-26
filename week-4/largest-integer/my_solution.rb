@@ -34,9 +34,9 @@ used above for initial solution - then went with the each method for refactoring
 # Your Solution Below
 def largest_integer(list_of_nums)
   # Your code goes here!
-  if list_of_nums.length == 0
-    return nil
-  end
+  # if list_of_nums.length == 0
+  #   return nil
+  # end
 
   largest = list_of_nums[0]
 

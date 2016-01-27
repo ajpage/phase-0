@@ -84,6 +84,30 @@ end
 
 print_list(final_list)
 
+=begin
+
+1. What did you learn about pseudocode from working on this challenge?
+The more detailed and broken down the pseudocode the easier it will be to write the actual methods.
+Our pseudocode was really good and took up quite a bit of our gps time but once we actually got into writing the methods it went by quickly. 
+
+2. What are the tradeoffs of using Arrays and Hashes for this challenge?
+Using an array would have made it harder to modify the list because it would require iterating through the array to do so.
+I think using a hash was the best choice since we didn't really care about order and really made the modification methods easy.
+
+3. What does a method return?
+Methods return the value of the last statement, or whatever the return statement is.
+
+4. What kind of things can you pass into methods as arguments?
+Methods can take in strings, integers, floats, arrays, hashes. Really any type of object.
+
+5. How can you pass information between methods?
+Using arguments in the methods. 
+
+6. What concepts were solidified in this challenge, and what concepts are still confusing?
+I got more comfortable with using hashes and pseudocoding but definitely still need to work on both.
+	
+
+=end
 
 
 

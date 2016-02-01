@@ -37,4 +37,22 @@ def accountability_groups(arr)
   groups
 end
 
+#refactor
+def accountability_groups(arr)
+  divisible_by_4 = arr.length % 4
+  groups = []
+
+  if divisible_by_4 == 3
+    groups << arr.shift(3)
+  else
+    divisible_by_4.times do
+      groups << arr.shift(5)
+    end
+  end
+
+  arr.each_slice(4) { |idx|  groups << idx }
+
+  groups
+end
+
 

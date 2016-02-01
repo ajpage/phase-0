@@ -55,4 +55,20 @@ def accountability_groups(arr)
   groups
 end
 
+=begin
+
+What was the most interesting and most difficult part of this challenge?
+I had a lot of freedom which I would have liked more if it was not such a busy week so that made it difficult to do the optional parts. 
+Do you feel you are improving in your ability to write pseudocode and break the problem down?
+Yes, I think I'm getting better at it with practice and with seeing other people do it and incorporating some of their strategies.
+Was your approach for automating this task a good solution? What could have made it even better?
+I think if i would have made it into a hash instead of an array it would have been better. Also randomizing the groups could make it better. 
+My solution works and puts students in mainly groups of 4 with the options of one group of 3 and 1 or 2 groups of 5 if the original group is not divisible by 4.
+What data structure did you decide to store the accountability groups in and why?
+I chose an array because unless the groups have some other name than group 0 group 1 etc its easy enough to find that group in the array format.
+What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+I used the enumerable method each_slice in my refactored solution which I had not seen or used before and it made my solution much easier to read.
+
+=end
+
 

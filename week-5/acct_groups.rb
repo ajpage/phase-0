@@ -39,6 +39,7 @@ end
 
 #refactor
 def accountability_groups(arr)
+  arr = arr.shuffle
   divisible_by_4 = arr.length % 4
   groups = []
 

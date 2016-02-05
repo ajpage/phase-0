@@ -29,15 +29,28 @@
 # Initial Solution
 
 class BingoBoard
-  @@letters = ['B', 'I', 'N', 'G', 'O']
-  @call = ''
+  
   def initialize(board)
     @bingo_board = board
   end
 
   def call
-    @call << @letters[rand(0...@letters.length)]
-    @call << rand(1..100)
+    @letters = ['B', 'I', 'N', 'G', 'O']
+    @call = ''
+    idx = rand(0...@letters.length)
+    @call <<  @letters[idx]
+    @call << rand(1..100).to_s
+  end
+
+  def check
+    i = 0
+    while i < 5
+      if @bingo_board[i][@idx] == @num
+        @bingo_board[i][@idx] = "X"  
+      end
+      p @bingo_board[i]
+      i += 1
+    end
   end
 
 

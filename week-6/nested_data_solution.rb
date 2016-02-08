@@ -75,3 +75,16 @@ startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]] * "ly, "
 
 p startup_names
+
+
+=begin
+
+1. What are some general rules you can apply to nested arrays?
+Start from the outer most array and work in to access data 
+
+2. What are some ways you can iterate over nested arrays?
+We used the each method and checked to see if the elements were of type array
+
+3. Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+My pair showed me how to flatten an array.
+=end

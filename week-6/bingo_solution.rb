@@ -27,7 +27,7 @@
   #fill in the outline here
 =end
 # Initial Solution
-
+=begin
 class BingoBoard
   
   def initialize(board)
@@ -55,8 +55,41 @@ class BingoBoard
 
 
 end
+=end
 
 # Refactored Solution
+
+class BingoBoard
+  
+  def initialize(board)
+    @bingo_board = board
+  end
+
+  def call
+    @letters = ['B', 'I', 'N', 'G', 'O']
+    @call = ''
+    @idx = rand(0...@letters.length)
+    @num = rand(1...100)
+    @call <<  @letters[@idx]
+    @call << @num.to_s
+    puts @call
+  end
+
+#must call before you can check
+  def check
+    i = 0
+    p "B---I---N---G---O"
+    while i < 5
+      if @bingo_board[i][@idx] == @num
+        @bingo_board[i][@idx] = "X"  
+      end
+      p @bingo_board[i]
+      i += 1
+    end
+  end
+
+
+end
 
 
 
@@ -68,6 +101,26 @@ board = [[47, 44, 71, 8, 88],
         [75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
+new_game.call
+new_game.check
+
 
 
 #Reflection
+=begin
+
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+  I feel like im getting better at pseudocoding at it is helping me quite a bit to make the actual coding easier when it get to be time
+What are the benefits of using a class for this challenge?
+  You can create many instances of a bingo game
+How can you access coordinates in a nested array?
+  first choose what sub array you want and then the element. So in the board array if I want to access the number 8
+  I would do board[0][3] because it is in the first subarray (index 0) and the element at index 3 in that subarray
+What methods did you use to access and modify the array?
+Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+ I learned about the sample method but ultimately did not use it because i needed to find the index of the letter and found it to be easier to just hold the index as its own variable
+How did you determine what should be an instance variable versus a local variable?
+ I used i as a local variable because it was only being used in the check method. All of the other variables were used throughout the class so they needed to be instance variables
+What do you feel is most improved in your refactored solution?
+ it actually works
+=end

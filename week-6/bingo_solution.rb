@@ -70,22 +70,18 @@ class BingoBoard
     @call = ''
     @idx = rand(0...@letters.length)
     @num = rand(1...100)
-    @call <<  @letters[@idx]
-    @call << @num.to_s
-    puts @call
+    puts "#{@letters[@idx]}#{@num}!"
   end
 
 #must call before you can check
   def check
-    i = 0
     p "B---I---N---G---O"
-    while i < 5
-      if @bingo_board[i][@idx] == @num
-        @bingo_board[i][@idx] = "X"  
+    @bingo_board.each { |i|
+      if i[@idx] == @num
+        i[@idx] = "X"  
       end
-      p @bingo_board[i]
-      i += 1
-    end
+      p i
+    }
   end
 
 
@@ -122,5 +118,5 @@ Give an example of a new method you learned while reviewing the Ruby docs. Based
 How did you determine what should be an instance variable versus a local variable?
  I used i as a local variable because it was only being used in the check method. All of the other variables were used throughout the class so they needed to be instance variables
 What do you feel is most improved in your refactored solution?
- it actually works
+ using the each method instead of a while loop and getting rid of some variables I didnt need
 =end

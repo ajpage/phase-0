@@ -47,4 +47,22 @@ The setter method change_my_age was replaced
 
 8.Is this code simpler than the last?
 yes
+
+9. What is a reader method?
+A reader method is a method that allows an instance variable to be read outside of the class
+
+10. What is a writer method?
+A writer method allows an instance variable to be changed outside of the class
+
+11. What do the attr methods do for you?
+attr_accessor is both a reader and a writer
+attr_reader is a reader method
+attr_writer is a writer method
+
+12. Should you always use an accessor to cover your bases? Why or why not?
+No because sometimes you dont want a variable to be changed once the instance of the class has been created
+For instance a type of tree will always be that type of tree
+
+13. What is confusing to you about these methods?
+This cleared up a lot
 =end

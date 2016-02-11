@@ -1,3 +1,47 @@
+
+//Alyssa Page - pseudocode to code person 3
+
+function sum(numbers) {
+  var result = 0;
+
+  for (var i = 0; i < numbers.length; i ++) {
+    result += numbers[i];
+  };
+
+  return result;
+}
+
+
+function mean(numbers, sum) {
+  var result = sum / (numbers.length);
+  return result;
+}
+
+
+function median(numbers) {
+  var result = (max - min) / 2;
+  var max = numbers[0];
+  var min = numbers[0];
+
+  for (var i = 1; i < numbers.length; i ++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+
+  for (var j = 1; j < numbers.length; j ++) {
+    if (numbers[j] < min) {
+      min = numbers[j];
+    }
+  }
+
+  
+  return result;
+}
+
+
+
+
 // Add the finished solution here when you receive it.
 // __________________________________________
 // Tests:  Do not alter code below this line.

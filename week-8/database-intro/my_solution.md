@@ -44,6 +44,22 @@ INNER JOIN regions
 ON states.region_id = regions.id
 ORDER BY region_id ASC;
 
+![Schema](schema.png)
+
+1. What are databases for?   
+Databases are for organizing and storing data. Databases make it easy to access, modify and remove this data.
+
+2. What is a one-to-many relationship?   
+With A and B where an element of A may be linked to many elements of B but a memeber of B is linked to only one element of A. For example a bio mother can have many children but a child can have only one bio mother.
+
+3. What is a primary key? What is a foreign key? How can you determine which is which?   
+Primary keys uniquely identify each row in the table, they are frequently defined on the identity column. Foreign keys establish a link between two tables when a primary key of one table is referenced by the column in another table. 
+
+4. How can you select information out of a SQL database? What are some general guidelines for that?  
+using keyword SELECT and identifying what table you want to select from. If you want all information from table "dogs"   
+SELECT * FROM dogs; 
+
+
 
 
 

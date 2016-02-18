@@ -63,19 +63,57 @@ var officers = {
 }
 
 // Pseudocode
+//Iterate over each person object in var votes
+//For each key/value pair, check to see if it exists in votecount
+//if it's undefined, and if it is, add office.candidate:1 to votecount
+//if it does exist, =+1 to the office.candidate for each time it occurs
 
-
+// Iterate over voteCount
+//  for each office find the max value of office.candidate 
+//  asign the candiate value to officers.office
+//
 // __________________________________________
 // Initial Solution
 
+for (var voter in votes){
+  // if (votes.hasOwnProperty(voter)) {
+    var obj = votes[voter];
+    for (var offices in obj) {
+      //if (votes.hasOwnProperty(voter)) {
+      if (obj.hasOwnProperty(offices)){
+        
+        if (voteCount[offices][obj[offices]] !== undefined) {
+        voteCount[offices][obj[offices]] += 1;
+        }
+      
+        else voteCount[offices][obj[offices]] =1;
+        } 
+      
+      }  
+    //}
+}
+  //for (var office)
 
-
-
-
-
-
-// __________________________________________
-// Refactored Solution
+// Iterate over voteCount
+// assign candidate variable by taking voteCount[offices]
+//  for each office find the max value of office.candidate 
+//  asign the candiate value to officers.office
+for (var title in voteCount) {
+  var max = 0;
+  var winner = null;
+  //var candidate = voteCount[title];
+  for (var candidate in voteCount[title]) {
+    if (voteCount[title][candidate] > max) {
+      max= voteCount[title][candidate];
+      winner = candidate;
+    }
+    
+    
+    
+    
+  }
+  officers[title] = winner;
+}
 
 
 

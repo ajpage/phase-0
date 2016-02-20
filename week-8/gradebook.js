@@ -23,9 +23,36 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+// var gradebook = {}
+
+// gradebook[students[0]] = {}
+// gradebook[students[1]] = {}
+// gradebook[students[2]] = {}
+// gradebook[students[3]] = {}
+
+// gradebook.Joseph.testScores = scores[0]
+// gradebook.Susan.testScores = scores[1]
+// gradebook.William.testScores = scores[2]
+// gradebook.Elizabeth.testScores = scores[3]
+
+// gradebook.addScore = function(name, score) {
+//   gradebook[name].testScores.push(score);
+// } 
+
+// gradebook.getAverage = function(name) {
+//   return average(gradebook[name].testScores);
+// };
+
+// function average(grades) {
+//   var sum = 0;
+//   for (var i= 0; i < grades.length; i ++) {
+//     sum += grades[i];
+//   }
+//   return sum / grades.length;
+// }
 
 
-
+// console.log(gradebook)
 
 
 
@@ -33,6 +60,33 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {}
+
+for (var i = 0; i < students.length; i++) {
+  gradebook[students[i]] = {testScores: scores[i]}
+}
+
+// gradebook.Joseph.testScores = scores[0]
+// gradebook.Susan.testScores = scores[1]
+// gradebook.William.testScores = scores[2]
+// gradebook.Elizabeth.testScores = scores[3]
+
+
+
+gradebook.addScore = function(name, score) {
+  gradebook[name].testScores.push(score);
+} 
+
+gradebook.getAverage = function(name) {
+  return average(gradebook[name].testScores);
+};
+
+function average(grades) {
+  var sum = grades.reduce(function(a,b) {
+    return a + b;
+  })
+  return sum / grades.length;
+}
 
 
 

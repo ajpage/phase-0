@@ -97,7 +97,14 @@ function average(grades) {
 // __________________________________________
 // Reflect
 
+//What did you learn about adding functions to objects?
+// You can call a function within a function in an object
 
+//How did you iterate over nested arrays in JavaScript?
+//Used a for loop to iterate over the array
+
+//Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+//Used .reduce in the average function. The reduce method reduces all elements in the array to one value. It does this by applying the callback function for each element that is present.
 
 
 

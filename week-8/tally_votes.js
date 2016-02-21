@@ -75,41 +75,73 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
+// for (var voter in votes){
+//   // if (votes.hasOwnProperty(voter)) {
+//     var obj = votes[voter];
+//     for (var offices in obj) {
+//       //if (votes.hasOwnProperty(voter)) {
+//       if (obj.hasOwnProperty(offices)){
+        
+//         if (voteCount[offices][obj[offices]] !== undefined) {
+//         voteCount[offices][obj[offices]] += 1;
+//         }
+      
+//         else voteCount[offices][obj[offices]] =1;
+//         } 
+      
+//       }  
+//     //}
+// }
+//   //for (var office)
+
+// // Iterate over voteCount
+// // assign candidate variable by taking voteCount[offices]
+// //  for each office find the max value of office.candidate 
+// //  asign the candiate value to officers.office
+// for (var title in voteCount) {
+//   var max = 0;
+//   var winner = null;
+//   //var candidate = voteCount[title];
+//   for (var candidate in voteCount[title]) {
+//     if (voteCount[title][candidate] > max) {
+//       max= voteCount[title][candidate];
+//       winner = candidate;
+//     }
+    
+    
+    
+    
+//     officers[title] = winner;
+// }
+// }
+
+
+//refactor
 for (var voter in votes){
-  // if (votes.hasOwnProperty(voter)) {
-    var obj = votes[voter];
+  var obj = votes[voter];
     for (var offices in obj) {
-      //if (votes.hasOwnProperty(voter)) {
+    
       if (obj.hasOwnProperty(offices)){
         
         if (voteCount[offices][obj[offices]] !== undefined) {
-        voteCount[offices][obj[offices]] += 1;
+        voteCount[offices][obj[offices]] ++;
         }
       
-        else voteCount[offices][obj[offices]] =1;
-        } 
+        else voteCount[offices][obj[offices]] = 1;
+      } 
       
-      }  
-    //}
+    }  
+    
 }
-  //for (var office)
 
-// Iterate over voteCount
-// assign candidate variable by taking voteCount[offices]
-//  for each office find the max value of office.candidate 
-//  asign the candiate value to officers.office
+
 for (var title in voteCount) {
   var max = 0;
-  var winner = null;
-  //var candidate = voteCount[title];
   for (var candidate in voteCount[title]) {
     if (voteCount[title][candidate] > max) {
       max= voteCount[title][candidate];
       winner = candidate;
     }
-    
-    
-    
     
   }
   officers[title] = winner;
@@ -119,12 +151,17 @@ for (var title in voteCount) {
 
 
 
-
 // __________________________________________
 // Reflection
 
+// What did you learn about iterating over nested objects in JavaScript?
+// It can get really tricky if you are not carful and using bracket notation really helps when using the for in structure
 
+// Were you able to find useful methods to help you with this?
+// Yes the for __ in __ is great for iterating over nested objects
 
+// What concepts were solidified in the process of working through this challenge?
+// When to use bracket notation
 
 
 

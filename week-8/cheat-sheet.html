@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Object CheatSheet</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header>
+	<h1>JavaScript Objects quick guide</h1>
+</header>
+
+<main>
+<div class = 'left'>
+<h2>Basics</h2>
+<p>Objects can have properties and methods (or functions). All objects of the same type
+have the same properties but can have different property values. All objects of the same type
+have the same methods available to them but can be used at different times</p>
+
+<h3>Object Definition</h3>
+<p>
+	Objects can be created using an Object literal <br>
+	<div class = 'javascript'>
+	var dog = {name:"Charlie", age:7, breed: "corgi"};
+	</div>
+</p>
+<p>
+	Or by creating a new empty object and adding properties later<br>
+	<div class = 'javascript'>
+	dog = new Object()
+	</div>
+</p>
+
+<h2>Access</h2>
+<h3>Accessing properties</h3>
+<p>
+	To access the properties of an object use either dot or bracket notation. <br>
+	<div class = 'javascript'>
+	dog.name
+	</div>
+	 --> Charlie <br>
+	<div class = 'javascript'>
+	dog.["name"]
+	</div>
+	 --> Charlie <br>
+	Where dot notation accesses the property directly and anything in brackets is evaluated first.
+</p>
+
+<h3>Accessing methods</h3>
+<p>
+	<div class = 'javascript'>
+	objectName.functionName();
+	</div>
+	 <br>
+	Make sure to include the parentheses or it will return the function definition
+</p>
+
+</div>
+
+<div class = 'right'>
+
+<h2>Editing an Object</h2>
+<h3>Adding Properties</h3>
+<p>
+	To add a property to an existing object <br>
+	<div class = 'javascript'>
+	dog.owner = "Barbara";
+	</div>
+</p>
+
+<h3>Adding Methods</h3>
+<p>
+	<div class = 'javascript'>
+	dog.info = function () { <br>
+    return this.name + " " + this.age; <br>
+};
+</div>
+</p>
+
+<h3>Deleting Properties</h3>
+<p>
+	Using the keyword delete <br>
+	<div class = 'javascript'>
+	delete dog.age;
+	</div>
+</p>
+
+
+
+<h2>Looping</h2>
+<p>
+	JavaScript uses the for ... in statement to loop through an object. 
+	The code block will be executed once for each Object property. <br>
+	<br>
+	<div class = 'javascript'>
+	for (var in dog) { <br>
+    console.log(dog[var]); <br>
+    }
+    </div>
+</p>
+	
+</div>
+
+</main>
+
+</body>
+</html>

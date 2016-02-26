@@ -69,3 +69,14 @@ assert { test6 == quotient }
 
 test6 = num1 % num2
 assert { test6 == modulus }
+
+=begin
+	
+What concepts did you review in this challenge?
+- I reviewed yeild statements and hashes
+What is still confusing to you about Ruby?
+- Assert statement and yeilds are a little fuzzy still but I understand them better
+What are you going to study to get more prepared for Phase 1?
+- Yeilds
+	
+=end
